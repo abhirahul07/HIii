@@ -106,7 +106,7 @@ body::before,body::after{content:"";position:fixed;z-index:-1;pointer-events:non
       </div>
     </section>
 
-    <div class="music-strip"><button class="music-button" id="musicBtn"><span class="dot"></span><span id="musicLabel">Now playing: Dooron Dooron</span> ♪</button></div>
+    <div class="music-strip"><button class="music-button" id="musicBtn"><span class="dot"></span><span id="musicLabel">Now playing: Raabta</span> ♪</button></div>
 
     <section class="scene imaginary">
       <div class="scene-grid">
@@ -119,6 +119,13 @@ body::before,body::after{content:"";position:fixed;z-index:-1;pointer-events:non
       <div class="scene-grid">
         <div class="copy"><div class="eyebrow">Best friends, obviously</div><h3>We’d play, fight, eat…</h3><p>We’d fight over the smallest things, get dramatic for five minutes, and somehow be completely fine again before anyone noticed.</p></div>
         <div class="photo"><img class="no-motion" src="assets/child2.png" alt="Imagined childhood memory"></div>
+      </div>
+    </section>
+
+    <section class="scene imaginary">
+      <div class="scene-grid">
+        <div class="copy"><div class="eyebrow">Our roles were obvious</div><h3>I’d be the innocent one. You’d be the warrior.</h3><p>I’d just stand there looking harmless while you fought every tiny battle for both of us — toys, snacks, arguments… probably even my battles. 😌😂</p></div>
+        <div class="photo"><img class="no-motion" src="assets/picture1.png" alt="Imagined childhood memory of us"></div>
       </div>
     </section>
 
@@ -332,11 +339,11 @@ startBackgroundMusic();
 musicBtn.addEventListener('click',()=>{
   if(backgroundMusic.paused){
     startBackgroundMusic();
-    musicLabel.textContent='Now playing: Dooron Dooron ♪';
+    musicLabel.textContent='Now playing: Raabta ♪';
     musicBtn.classList.remove('paused');
   }else{
     backgroundMusic.pause();
-    musicLabel.textContent='Music paused · Dooron Dooron ♪';
+    musicLabel.textContent='Music paused · Raabta ♪';
     musicBtn.classList.add('paused');
   }
 });
@@ -347,7 +354,7 @@ begin.addEventListener('click',()=>{
   started=true;
   start.classList.add('hide');
   startBackgroundMusic();
-  musicLabel.textContent='Now playing: Dooron Dooron ♪';
+  musicLabel.textContent='Now playing: Raabta ♪';
   musicBtn.classList.remove('paused');
   document.getElementById('top').scrollIntoView({behavior:'smooth'});
 });
